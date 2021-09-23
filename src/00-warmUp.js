@@ -169,7 +169,12 @@ function filterOddsOrEvens(nums, parity) {
  * > 9
  *
  */
-function findTargetNum(nums, targetNum) {}
+function findTargetNum(nums, targetNum) {
+  let foundTargetNum = nums.find((num) => {
+    return num === targetNum;
+  })
+  return foundTargetNum;
+}
 
 /**
  *
