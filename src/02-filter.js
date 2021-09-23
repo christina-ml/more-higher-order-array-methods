@@ -51,7 +51,36 @@ function filterByType(pokemonArr, type) {
  * filterNamesByType(examplePokemonData, 'water')
  *  > [Squirtle, Lapras, Poliwag, Gyarados, Cloyster]
  */
-function filterNamesByType(pokemonArr, type) {}
+function filterNamesByType(pokemonArr, type) {
+  let filterName = pokemonArr.filter(pokemon => {
+    if (pokemon.type.includes(type)){
+      return pokemon;
+    }
+  });
+
+  let mapName = filterName.map(pokemon => {
+    return pokemon.name
+  });
+
+  return mapName;
+}
+console.log(filterNamesByType(examplePokemonData, 'water'));
+
+
+
+
+// function filterNamesByType(pokemonArr, type) {
+//   let filteredName = pokemonArr.filter((pokemon) => {
+//     if (pokemon.type.includes(type)){
+//       return pokemon;
+//     }
+//   })
+//   pokemonArr.map(pokemon => {
+//     return pokemon.name
+//   })
+//   return filteredName;
+// }
+// console.log(filterNamesByType(examplePokemonData, 'water'));
 
 /**
  *
