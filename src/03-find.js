@@ -42,7 +42,12 @@ const ghostPokemonData = require("../data/ghostPokemon_data");
  * > Sorry, could not find the pokemon you're looking for.
  * 
  */
-function findBySpecies() {}
+function findBySpecies(pokemonArr, species) {
+  let foundSpecies = pokemonArr.find((pokemon) => {
+    return pokemon.species.toLowerCase() === species.toLowerCase();
+  })
+  return foundSpecies;
+}
 
 /**
  *
