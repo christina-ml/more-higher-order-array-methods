@@ -239,7 +239,10 @@ function isEveryElTheSame(arr) {
  *
  */
 function areSomeEqualToInput(arr, value) {
-  
+  let areSomeEqual = arr.some((ar) => {
+    return ar === value;
+  })
+  return areSomeEqual;
 }
 
 module.exports = {
