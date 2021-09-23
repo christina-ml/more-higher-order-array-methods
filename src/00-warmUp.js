@@ -53,7 +53,10 @@ function plusOne(nums) {
  * > [6, 10, 16, 8, 18]
  *
  */
-function timesTwo(nums) {}
+function timesTwo(nums) {
+  let isTimesTwo = nums.map(num => num * 2);
+  return isTimesTwo;
+}
 
 /**
  *
