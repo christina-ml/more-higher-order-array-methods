@@ -125,7 +125,21 @@ function filterForOdds(nums) {
  * > [8, 4]
  *
  */
-function filterOddsOrEvens(nums, parity) {}
+function filterOddsOrEvens(nums, parity) {
+  let filteredOddsOrEvens = nums.filter(num => {
+    if (parity.toLowerCase() === "even"){
+      if (num % 2 === 0){
+        return num;
+      }
+    }
+    if (parity.toLowerCase() === "odd"){
+      if (num % 2 === 1){
+        return num;
+      }
+    }
+  })
+  return filteredOddsOrEvens;
+}
 
 /**
  *
