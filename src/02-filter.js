@@ -64,23 +64,7 @@ function filterNamesByType(pokemonArr, type) {
 
   return mapName;
 }
-console.log(filterNamesByType(examplePokemonData, 'water'));
-
-
-
-
-// function filterNamesByType(pokemonArr, type) {
-//   let filteredName = pokemonArr.filter((pokemon) => {
-//     if (pokemon.type.includes(type)){
-//       return pokemon;
-//     }
-//   })
-//   pokemonArr.map(pokemon => {
-//     return pokemon.name
-//   })
-//   return filteredName;
-// }
-// console.log(filterNamesByType(examplePokemonData, 'water'));
+// console.log(filterNamesByType(examplePokemonData, 'water')); // test
 
 /**
  *
