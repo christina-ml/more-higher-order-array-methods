@@ -23,7 +23,14 @@ const ghostPokemonData = require("../data/ghostPokemon_data");
  * ... Cloyster ...
  * ]
  */
-function filterByType() {}
+function filterByType(pokemonArr, type) {
+  let filteredType = pokemonArr.filter((pokemon) => {
+    if (pokemon.type.includes(type)){
+      return pokemon;
+    }
+  })
+  return filteredType;
+}
 
 /**
  *
@@ -44,7 +51,7 @@ function filterByType() {}
  * filterNamesByType(examplePokemonData, 'water')
  *  > [Squirtle, Lapras, Poliwag, Gyarados, Cloyster]
  */
-function filterNamesByType() {}
+function filterNamesByType(pokemonArr, type) {}
 
 /**
  *
@@ -66,7 +73,7 @@ function filterNamesByType() {}
  * filterNamesByStrength(examplePokemonData, 'ice')
  *  > [Charmander, Onix]
  */
-function filterNamesByStrength() {}
+function filterNamesByStrength(pokemonArr, type) {}
 
 module.exports = {
   filterByType,
