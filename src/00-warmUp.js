@@ -207,7 +207,9 @@ function findTargetNum(nums, targetNum) {
  * > false
  *
  */
-function isEveryElTheSame(arr) {}
+function isEveryElTheSame(arr) {
+  return arr.every(ar => arr[0] === ar)
+}
 
 /**
  *
@@ -236,7 +238,9 @@ function isEveryElTheSame(arr) {}
  * > true
  *
  */
-function areSomeEqualToInput(arr, value) {}
+function areSomeEqualToInput(arr, value) {
+  
+}
 
 module.exports = {
   plusOne,
