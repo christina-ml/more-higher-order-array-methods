@@ -26,7 +26,10 @@ let numberArr = [3, 5, 8, 4, 9];
  * > [4, 6, 9, 5, 10]
  *
  */
-function plusOne() {}
+function plusOne(nums) {
+  const addedOne = nums.map(num => num + 1);
+  return addedOne;
+}
 
 /**
  *
@@ -50,7 +53,7 @@ function plusOne() {}
  * > [6, 10, 16, 8, 18]
  *
  */
-function timesTwo() {}
+function timesTwo(nums) {}
 
 /**
  *
@@ -74,7 +77,7 @@ function timesTwo() {}
  * > [3, 5, 9]
  *
  */
-function filterForOdds() {}
+function filterForOdds(nums) {}
 
 /**
  *
@@ -112,7 +115,7 @@ function filterForOdds() {}
  * > [8, 4]
  *
  */
-function filterOddsOrEvens() {}
+function filterOddsOrEvens(nums, parity) {}
 
 /**
  *
@@ -142,7 +145,7 @@ function filterOddsOrEvens() {}
  * > 9
  *
  */
-function findTargetNum() {}
+function findTargetNum(nums, targetNum) {}
 
 /**
  *
@@ -175,7 +178,7 @@ function findTargetNum() {}
  * > false
  *
  */
-function isEveryElTheSame() {}
+function isEveryElTheSame(arr) {}
 
 /**
  *
@@ -204,7 +207,7 @@ function isEveryElTheSame() {}
  * > true
  *
  */
-function areSomeEqualToInput() {}
+function areSomeEqualToInput(arr, value) {}
 
 module.exports = {
   plusOne,
