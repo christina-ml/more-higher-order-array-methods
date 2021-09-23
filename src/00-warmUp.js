@@ -54,7 +54,7 @@ function plusOne(nums) {
  *
  */
 function timesTwo(nums) {
-  let isTimesTwo = nums.map(num => num * 2);
+  const isTimesTwo = nums.map(num => num * 2);
   return isTimesTwo;
 }
 
@@ -80,7 +80,14 @@ function timesTwo(nums) {
  * > [3, 5, 9]
  *
  */
-function filterForOdds(nums) {}
+function filterForOdds(nums) {
+  const filteredOdds = nums.filter(num => {
+    if (num % 2 === 1){
+      return num;
+    }
+  })
+  return filteredOdds;
+}
 
 /**
  *
